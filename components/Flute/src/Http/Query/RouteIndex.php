@@ -31,7 +31,7 @@ class RouteIndex implements RouteIndexInterface
      */
     public function getIndex(): string
     {
-        return $this->getIndex();
+        return $this->index;
     }
 
     /**
