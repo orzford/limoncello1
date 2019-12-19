@@ -4,6 +4,7 @@
   "support": {
     "issues": "https://github.com/orzford/limoncello/issues"
   },
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "dreamsbond",
