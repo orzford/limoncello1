@@ -4,3 +4,4 @@
 /.gitattributes     export-ignore
 /.gitignore         export-ignore
 /components         export-ignore
+/split              export-ignore
