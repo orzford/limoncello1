@@ -1,11 +1,11 @@
 <?php declare (strict_types=1);
 
-namespace Limoncello\Ldap\Contracts\Settings\Packages;
+namespace Orzford\Limoncello\Ldap\Contracts\Settings\Packages;
 
 use Limoncello\Contracts\Settings\SettingsInterface;
 
 /**
- * @package Limoncello\Ldap\Contracts\Settings\Packages
+ * @package Orzford\Limoncello\Ldap\Contracts\Settings\Packages
  */
 interface LdapSettingsInterface extends SettingsInterface
 {

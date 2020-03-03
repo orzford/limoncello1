@@ -7,7 +7,7 @@ use LdapRecord\Connection as LdapConnection;
 use Limoncello\Contracts\Commands\ContainerConfiguratorInterface;
 use Limoncello\Contracts\Container\ContainerInterface;
 use Limoncello\Contracts\Settings\SettingsProviderInterface;
-use Limoncello\Ldap\Package\LdapSettings;
+use Orzford\Limoncello\Ldap\Package\LdapSettings;
 use Psr\Container\ContainerInterface as PsrContainerInterface;
 
 /**

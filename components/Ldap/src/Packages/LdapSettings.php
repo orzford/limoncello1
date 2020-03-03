@@ -1,8 +1,8 @@
 <?php declare (strict_types=1);
 
-namespace Limoncello\Ldap\Package;
+namespace Orzford\Limoncello\Ldap\Package;
 
-use Limoncello\Ldap\Contracts\Settings\Packages\LdapSettingsInterface;
+use Orzford\Limoncello\Ldap\Contracts\Settings\Packages\LdapSettingsInterface;
 
 /**
  * @package App

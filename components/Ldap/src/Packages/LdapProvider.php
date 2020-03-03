@@ -1,8 +1,9 @@
 <?php declare (strict_types=1);
 
-namespace Limoncello\Ldap\Packages;
+namespace Orzford\Limoncello\Ldap\Packages;
 
 use Limoncello\Contracts\Provider\ProvidesContainerConfiguratorsInterface;
+use Limoncello\Ldap\Packages\LdapContainerConfigurator;
 
 /**
  * @package App
