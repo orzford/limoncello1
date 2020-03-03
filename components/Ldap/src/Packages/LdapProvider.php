@@ -1,13 +1,13 @@
 <?php declare (strict_types=1);
 
-namespace Limoncello\LDAP\Packages;
+namespace Limoncello\Ldap\Packages;
 
 use Limoncello\Contracts\Provider\ProvidesContainerConfiguratorsInterface;
 
 /**
  * @package App
  */
-class LDAPProvider implements ProvidesContainerConfiguratorsInterface
+class LdapProvider implements ProvidesContainerConfiguratorsInterface
 {
     /**
      * @inheritDoc
@@ -15,7 +15,7 @@ class LDAPProvider implements ProvidesContainerConfiguratorsInterface
     public static function getContainerConfigurators(): array
     {
         return [
-            LDAPContainerConfigurator::class,
+            LdapContainerConfigurator::class,
         ];
     }
 }

@@ -1,13 +1,13 @@
 <?php declare (strict_types=1);
 
-namespace Limoncello\LDAP\Contracts\Settings\Packages;
+namespace Limoncello\Ldap\Contracts\Settings\Packages;
 
 use Limoncello\Contracts\Settings\SettingsInterface;
 
 /**
- * @package Limoncello\LDAP\Contracts\Settings\Packages
+ * @package Limoncello\Ldap\Contracts\Settings\Packages
  */
-interface LDAPSettingsInterface extends SettingsInterface
+interface LdapSettingsInterface extends SettingsInterface
 {
     /**
      * Settings key

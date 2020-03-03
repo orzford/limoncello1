@@ -7,7 +7,7 @@ use Limoncello\LDAP\Contracts\Settings\Packages\LDAPSettingsInterface;
 /**
  * @package App
  */
-class LDAPSettings implements LDAPSettingsInterface
+class LdapSettings implements LDAPSettingsInterface
 {
     /**
      * @inheritDoc
