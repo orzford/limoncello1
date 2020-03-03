@@ -5,4 +5,5 @@ BRANCHES='master develop'
 COMPONENTS=(
     'components/Data/:git@github.com:orzford/limoncello-data.git'
     'components/Flute/:git@github.com:orzford/limoncello-flute.git'
+    'components/LDAP/:git@github.com:orzford/limoncello-ldap.git'
 )
