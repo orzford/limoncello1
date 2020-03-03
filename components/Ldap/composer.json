@@ -1,5 +1,10 @@
 {
     "name": "orzford/limoncello-ldap",
+    "description": "LDAP library for Limoncello PHP framework.",
+    "keywords": [
+        "limoncello",
+        "ldap"
+    ],
     "homepage": "https://github.com/orzford/limoncello/tree/master/components/ldap",
     "support": {
         "issues": "https://github.com/orzford/limoncello/issues"

@@ -1,58 +1,65 @@
 {
-  "name": "orzford/limoncello",
-  "homepage": "https://github.com/orzford/limoncello",
-  "support": {
-    "issues": "https://github.com/orzford/limoncello/issues"
-  },
-  "license": "Apache-2.0",
-  "authors": [
-    {
-      "name": "dreamsbond",
-      "email": "info@dreamsbond.com"
+    "name": "orzford/limoncello",
+    "description": "PHP framework framework (PSR-7)",
+    "keywords": [
+        "framework",
+        "PSR-7",
+        "PSR7",
+        "limoncello"
+    ],
+    "homepage": "https://github.com/orzford/limoncello",
+    "support": {
+        "issues": "https://github.com/orzford/limoncello/issues"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "dreamsbond",
+            "email": "info@dreamsbond.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "orzford/limoncello-data": "self.version",
+        "orzford/limonceollo-flute": "self.version"
+    },
+    "scripts": {
+        "test": [
+            "@clean-vendor-folders",
+            "@test-unit-with-coverage",
+            "@test-cs",
+            "@test-md"
+        ],
+        "clean-vendor-folders": [
+            "php -r \"system('rm -rf ./components/Data/vendor/');\"",
+            "php -r \"system('rm -rf ./components/Flute/vendor/');\""
+        ],
+        "test-unit": [
+            "@test-unit-component-Data",
+            "@test-unit-component-Flute"
+        ],
+        "test-unit-with-coverage": [
+            "@test-unit-with-coverage-component-Data",
+            "@test-unit-with-coverage-component-Flute"
+        ],
+        "update-component-Data": "@composer update --working-dir=./components/Data/ --optimize-autoloader --quiet",
+        "update-component-Flute": "@composer update --working-dir=./components/Flute/ --optimize-autoloader --quiet",
+        "test-cs": [
+            "@test-cs-component-Data",
+            "@test-cs-component-Flute"
+        ],
+        "test-cs-component-Data": "@composer test-cs --working-dir=./components/Data/",
+        "test-cs-component-Flute": "@composer test-cs --working-dir=./components/Flute/",
+        "test-md": [
+            "@test-md-component-Data",
+            "@test-md-component-Flute"
+        ],
+        "test-md-component-Data": "@composer test-md --working-dir=./components/Data/",
+        "test-md-component-Flute": "@composer test-md --working-dir=./components/Flute/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.10.x-dev"
+        }
     }
-  ],
-  "require": {
-    "php": ">=7.1.0",
-    "orzford/limoncello-data": "self.version",
-    "orzford/limonceollo-flute": "self.version"
-  },
-  "scripts": {
-    "test": [
-      "@clean-vendor-folders",
-      "@test-unit-with-coverage",
-      "@test-cs",
-      "@test-md"
-    ],
-    "clean-vendor-folders": [
-      "php -r \"system('rm -rf ./components/Data/vendor/');\"",
-      "php -r \"system('rm -rf ./components/Flute/vendor/');\""
-    ],
-    "test-unit": [
-      "@test-unit-component-Data",
-      "@test-unit-component-Flute"
-    ],
-    "test-unit-with-coverage": [
-      "@test-unit-with-coverage-component-Data",
-      "@test-unit-with-coverage-component-Flute"
-    ],
-    "update-component-Data": "@composer update --working-dir=./components/Data/ --optimize-autoloader --quiet",
-    "update-component-Flute": "@composer update --working-dir=./components/Flute/ --optimize-autoloader --quiet",
-    "test-cs": [
-      "@test-cs-component-Data",
-      "@test-cs-component-Flute"
-    ],
-    "test-cs-component-Data": "@composer test-cs --working-dir=./components/Data/",
-    "test-cs-component-Flute": "@composer test-cs --working-dir=./components/Flute/",
-    "test-md": [
-      "@test-md-component-Data",
-      "@test-md-component-Flute"
-    ],
-    "test-md-component-Data": "@composer test-md --working-dir=./components/Data/",
-    "test-md-component-Flute": "@composer test-md --working-dir=./components/Flute/"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-develop": "0.10.x-dev"
-    }
-  }
 }

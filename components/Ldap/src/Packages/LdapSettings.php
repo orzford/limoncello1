@@ -1,13 +1,13 @@
 <?php declare (strict_types=1);
 
-namespace Limoncello\LDAP\Package;
+namespace Limoncello\Ldap\Package;
 
-use Limoncello\LDAP\Contracts\Settings\Packages\LDAPSettingsInterface;
+use Limoncello\Ldap\Contracts\Settings\Packages\LdapSettingsInterface;
 
 /**
  * @package App
  */
-class LdapSettings implements LDAPSettingsInterface
+class LdapSettings implements LdapSettingsInterface
 {
     /**
      * @inheritDoc
