@@ -3,6 +3,7 @@
     "description": "LDAP library for Limoncello PHP framework.",
     "keywords": [
         "limoncello",
+        "framework",
         "ldap"
     ],
     "homepage": "https://github.com/orzford/limoncello/tree/master/components/ldap",
